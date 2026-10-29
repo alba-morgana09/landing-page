@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Morgana — estudante de Análise e Desenvolvimento de Sistemas e profissional autônoma em desenvolvimento web." />
+    <title>Morgana — Soluções Digitais</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: { sans: ["Inter", "sans-serif"] },
+            colors: { cyberDark: "#080619", cyberPurple: "#4f17c2", cyberBlue: "#2d52f3" }
+          }
+        }
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <style>
+      :root { color-scheme: dark; }
+      body { font-family: "Inter", sans-serif; background: #080619; color: #fff; overflow-x: hidden; }
+      .bg-cyber { background: radial-gradient(circle at 20% 30%, #3e12a6 0%, #0d082d 50%, #050310 100%); }
+      .circuit-pattern { background-image: radial-gradient(rgba(255,255,255,.15) 1px, transparent 1px); background-size: 24px 24px; }
+      .circuit-lines { background: linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px); background-size: 60px 60px; }
+      .glow-orb { background: radial-gradient(circle, rgba(120,58,245,.4) 0%, rgba(45,82,243,.15) 60%, transparent 80%); backdrop-filter: blur(10px); }
+      .glass-circle { background: radial-gradient(circle at 30% 30%, rgba(255,255,255,.12), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.15); backdrop-filter: blur(20px); }
+    </style>
+  </head>
+  <body class="bg-cyber antialiased">
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-cyberDark/70 backdrop-blur-md">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Navegação principal">
+        <a href="#inicio" class="flex items-center gap-3"><span class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-cyberPurple to-cyberBlue text-lg font-black shadow-lg shadow-cyberPurple/50">M</span><span class="text-sm font-bold tracking-wider sm:text-base">Morgana <span class="text-xs font-normal text-indigo-300">/ Tech & Dev</span></span></a>
+        <div class="hidden items-center gap-7 text-sm font-medium text-slate-300 md:flex"><a class="transition hover:text-white" href="#inicio">Início</a><a class="transition hover:text-white" href="#servicos">Serviços</a><a class="transition hover:text-white" href="#projetos">Projetos</a><a class="transition hover:text-white" href="#sobre">Sobre</a><a class="transition hover:text-white" href="#contato">Contato</a></div>
+        <div class="hidden items-center gap-3 sm:flex"><a data-config-link="github" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-xs font-semibold transition hover:bg-white/10">Conhecer meu GitHub ↗</a><a data-config-link="linkedin" target="_blank" rel="noopener noreferrer" class="rounded-full bg-white px-4 py-2 text-xs font-bold text-cyberDark transition hover:bg-slate-200">Conectar no LinkedIn ↗</a></div>
+        <button id="menu-button" class="rounded-xl border border-white/10 p-2 text-white md:hidden" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"><svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </nav>
+      <div id="mobile-menu" class="hidden border-b border-white/10 bg-cyberDark px-6 py-4 md:hidden"><div class="flex flex-col gap-3 text-sm font-medium text-slate-300"><a class="py-2 hover:text-white" href="#inicio">Início</a><a class="py-2 hover:text-white" href="#servicos">Serviços</a><a class="py-2 hover:text-white" href="#projetos">Projetos demonstrativos</a><a class="py-2 hover:text-white" href="#sobre">Sobre</a><a class="py-2 hover:text-white" href="#contato">Contato</a><hr class="my-1 border-white/10" /><a data-config-link="github" target="_blank" rel="noopener noreferrer" class="text-slate-300">Conhecer meu GitHub ↗</a><a data-config-link="linkedin" target="_blank" rel="noopener noreferrer" class="font-semibold text-indigo-300">Conectar no LinkedIn ↗</a></div></div>
+    </header>
+
+    <main class="pt-16">
+      <section id="inicio" class="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden py-20">
+        <div class="absolute inset-0 circuit-lines opacity-30"></div><div class="absolute inset-0 circuit-pattern opacity-30"></div><div class="pointer-events-none absolute -left-20 top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full border border-white/10 glow-orb"></div>
+        <div class="relative mx-auto grid w-full max-w-7xl items-center gap-12 px-6 lg:grid-cols-12 lg:px-8">
+          <div class="z-10 lg:col-span-7"><div class="mb-6 inline-flex rounded-2xl border border-white/20 bg-white/5 p-3 backdrop-blur-md" aria-hidden="true"><svg class="h-8 w-8 text-indigo-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><p class="mb-4 text-sm font-semibold uppercase tracking-[.2em] text-indigo-300">Desenvolvimento web autoral</p><h1 class="text-5xl font-black leading-tight tracking-tight sm:text-6xl lg:text-7xl">Transformando ideias em <span class="bg-gradient-to-r from-white via-indigo-200 to-indigo-400 bg-clip-text text-transparent">soluções digitais.</span></h1><p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">Sou Morgana, estudante de Análise e Desenvolvimento de Sistemas e profissional autônoma. Desenvolvo páginas web e interfaces responsivas com foco em clareza, funcionalidade e experiência do usuário.</p><div class="mt-10 flex flex-wrap items-center gap-4"><a href="#contato" class="inline-flex items-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-bold text-cyberDark shadow-xl transition hover:scale-105 hover:bg-indigo-100">Vamos conversar sobre seu projeto <span class="flex h-6 w-6 items-center justify-center rounded-full bg-cyberDark text-xs text-white">➔</span></a><a href="#projetos" class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 px-6 py-4 text-sm font-semibold transition hover:bg-white/10">Conheça meu trabalho ↓</a></div></div>
+          <div class="relative flex items-center justify-center lg:col-span-5"><div class="relative flex h-[330px] w-[330px] items-center justify-center rounded-full p-6 shadow-2xl glass-circle sm:h-[440px] sm:w-[440px]"><div class="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border border-white/20 bg-gradient-to-br from-cyberPurple/40 to-cyberBlue/20"><div class="w-[85%] rounded-xl border border-white/20 bg-cyberDark/90 p-4 shadow-2xl backdrop-blur-md"><div class="mb-3 flex items-center justify-between border-b border-white/10 pb-3"><div class="flex gap-1.5"><span class="h-2.5 w-2.5 rounded-full bg-rose-500"></span><span class="h-2.5 w-2.5 rounded-full bg-amber-500"></span><span class="h-2.5 w-2.5 rounded-full bg-emerald-500"></span></div><span class="font-mono text-[10px] text-indigo-300">morgana.dev</span></div><div class="space-y-3"><div class="h-4 w-3/4 rounded bg-white/20"></div><div class="h-3 w-1/2 rounded bg-indigo-400/30"></div><div class="mt-4 rounded-lg border border-indigo-500/30 bg-indigo-600/20 p-3 text-center"><p class="text-xs font-bold">Clareza & Funcionalidade</p></div></div></div></div></div></div>
+        </div>
+      </section>
+
+      <section id="servicos" class="border-t border-white/10 bg-cyberDark/80 py-24">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8"><div class="mx-auto mb-14 max-w-2xl text-center"><p class="text-xs font-bold uppercase tracking-widest text-indigo-400">Serviços</p><h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Soluções pensadas para cada escopo</h2><p class="mt-4 text-sm leading-7 text-slate-400">Posso desenvolver cada solução conforme a necessidade e a viabilidade técnica do projeto.</p></div><div class="grid gap-5 md:grid-cols-3"><article class="rounded-3xl border border-white/15 bg-white/5 p-7 backdrop-blur-xl"><div class="text-sm font-bold text-indigo-300">01</div><h3 class="mt-5 text-lg font-bold">Landing pages</h3><p class="mt-3 text-sm leading-7 text-slate-300">Páginas objetivas para apresentar uma ideia, serviço ou oferta com clareza.</p></article><article class="rounded-3xl border border-white/15 bg-white/5 p-7 backdrop-blur-xl"><div class="text-sm font-bold text-indigo-300">02</div><h3 class="mt-5 text-lg font-bold">Sites institucionais simples</h3><p class="mt-3 text-sm leading-7 text-slate-300">Estruturas responsivas para comunicar informações essenciais de uma organização.</p></article><article class="rounded-3xl border border-white/15 bg-white/5 p-7 backdrop-blur-xl"><div class="text-sm font-bold text-indigo-300">03</div><h3 class="mt-5 text-lg font-bold">Páginas de serviços</h3><p class="mt-3 text-sm leading-7 text-slate-300">Páginas de divulgação para explicar serviços e facilitar o próximo contato.</p></article><article class="rounded-3xl border border-white/15 bg-white/5 p-7 backdrop-blur-xl"><div class="text-sm font-bold text-indigo-300">04</div><h3 class="mt-5 text-lg font-bold">Ajustes em interfaces</h3><p class="mt-3 text-sm leading-7 text-slate-300">Melhorias visuais e de organização em interfaces existentes, conforme o escopo.</p></article><article class="rounded-3xl border border-white/15 bg-white/5 p-7 backdrop-blur-xl"><div class="text-sm font-bold text-indigo-300">05</div><h3 class="mt-5 text-lg font-bold">Prototipação visual</h3><p class="mt-3 text-sm leading-7 text-slate-300">Organização inicial de páginas para visualizar hierarquia, conteúdo e navegação.</p></article><div class="flex items-center rounded-3xl border border-indigo-400/20 bg-indigo-500/10 p-7"><p class="text-sm leading-7 text-indigo-100">Cada projeto é avaliado individualmente e recebe uma proposta de escopo e prazo antes do início.</p></div></div></div>
+      </section>
+
+      <section id="projetos" class="border-t border-white/10 py-24"><div class="mx-auto max-w-7xl px-6 lg:px-8"><div class="max-w-2xl"><p class="text-xs font-bold uppercase tracking-widest text-indigo-400">Portfólio em construção</p><h2 class="mt-3 text-3xl font-extrabold sm:text-4xl">Projetos demonstrativos</h2><p class="mt-4 leading-7 text-slate-300">Estou desenvolvendo projetos autorais para praticar, experimentar ideias e publicar progressivamente. Esta seção será atualizada quando cada projeto estiver pronto.</p></div><div class="mt-12 grid gap-6 md:grid-cols-3"><article class="rounded-3xl border border-dashed border-white/20 bg-white/[.03] p-7"><span class="rounded-full border border-indigo-400/30 bg-indigo-500/10 px-3 py-1 text-[11px] font-semibold text-indigo-300">Projeto demonstrativo</span><div class="mt-8 flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-indigo-500/10 to-transparent text-4xl text-indigo-300">01</div><h3 class="mt-6 text-xl font-bold">Landing page para negócio fictício</h3><p class="mt-3 text-sm leading-7 text-slate-400">Conceito em desenvolvimento para exercitar comunicação, hierarquia visual e chamada para ação.</p></article><article class="rounded-3xl border border-dashed border-white/20 bg-white/[.03] p-7"><span class="rounded-full border border-violet-400/30 bg-violet-500/10 px-3 py-1 text-[11px] font-semibold text-violet-300">Projeto autoral</span><div class="mt-8 flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-violet-500/10 to-transparent text-4xl text-violet-300">02</div><h3 class="mt-6 text-xl font-bold">Site institucional responsivo</h3><p class="mt-3 text-sm leading-7 text-slate-400">Proposta autoral para uma empresa fictícia, ainda sem publicação ou tecnologias definidas.</p></article><article class="rounded-3xl border border-dashed border-white/20 bg-white/[.03] p-7"><span class="rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1 text-[11px] font-semibold text-cyan-300">Projeto demonstrativo</span><div class="mt-8 flex h-28 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-cyan-500/10 to-transparent text-4xl text-cyan-300">03</div><h3 class="mt-6 text-xl font-bold">Página de produto digital</h3><p class="mt-3 text-sm leading-7 text-slate-400">Exercício de apresentação de um produto fictício, planejado para desenvolvimento futuro.</p></article></div></div></section>
+
+      <section id="sobre" class="border-t border-white/10 bg-cyberDark/70 py-24"><div class="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-2 lg:px-8"><div><p class="text-xs font-bold uppercase tracking-widest text-indigo-400">Sobre mim</p><h2 class="mt-3 text-4xl font-black">Morgana</h2><p class="mt-1 text-sm font-medium text-indigo-300">Estudante de Análise e Desenvolvimento de Sistemas</p><p class="mt-6 leading-8 text-slate-300">Sou Morgana, estudante de Análise e Desenvolvimento de Sistemas e profissional autônoma em desenvolvimento web. Tenho interesse em transformar necessidades práticas em experiências digitais claras, funcionais e responsivas. Busco evoluir continuamente por meio dos estudos, da prática e do desenvolvimento de projetos autorais.</p></div><div class="rounded-3xl border border-white/15 bg-cyberDark/90 p-8 font-mono text-xs leading-7 text-indigo-200 shadow-2xl"><p><span class="text-indigo-400">const</span> profile = {</p><p class="pl-4">focus: <span class="text-white">"web development"</span>,</p><p class="pl-4">approach: <span class="text-white">"clear and responsive"</span>,</p><p class="pl-4">status: <span class="text-emerald-400">"learning by building"</span></p><p>};</p></div></div></section>
+
+      <section id="contato" class="border-t border-white/10 py-24"><div class="mx-auto max-w-3xl px-6 text-center lg:px-8"><p class="text-xs font-bold uppercase tracking-widest text-indigo-400">Contato profissional</p><h2 class="mt-3 text-4xl font-black sm:text-5xl">Tem uma ideia? Vamos conversar.</h2><p class="mt-5 leading-8 text-slate-300">Se você precisa de uma página web ou quer discutir uma ideia digital, entre em contato pelos meus canais profissionais.</p><div class="mt-9 flex flex-wrap justify-center gap-4"><a data-config-link="github" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/20 bg-white/5 px-6 py-3.5 text-sm font-bold transition hover:bg-white/10">Conhecer meu GitHub ↗</a><a data-config-link="linkedin" target="_blank" rel="noopener noreferrer" class="rounded-full bg-white px-6 py-3.5 text-sm font-bold text-cyberDark transition hover:bg-slate-200">Conectar no LinkedIn ↗</a></div></div></section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-cyberDark py-8 text-center text-xs text-slate-400"><div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 sm:flex-row"><p>© 2026 Morgana - Análise e Desenvolvimento de Sistemas. Todos os direitos reservados.</p><div class="flex gap-4"><a data-config-link="github" target="_blank" rel="noopener noreferrer" class="hover:text-white">GitHub</a><a data-config-link="linkedin" target="_blank" rel="noopener noreferrer" class="hover:text-white">LinkedIn</a></div></div></footer>
+
+    <script src="config.js"></script>
+    <script>
+      document.querySelectorAll("[data-config-link]").forEach((link) => {
+        const key = link.dataset.configLink;
+        const url = window.SITE_CONFIG?.links?.[key];
+        if (url) link.href = url;
+      });
+      const menuButton = document.getElementById("menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuButton.addEventListener("click", () => {
+        const open = !mobileMenu.classList.contains("hidden");
+        mobileMenu.classList.toggle("hidden");
+        menuButton.setAttribute("aria-expanded", String(!open));
+      });
+      mobileMenu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+        menuButton.setAttribute("aria-expanded", "false");
+      }));
+    </script>
+  </body>
+</html>
